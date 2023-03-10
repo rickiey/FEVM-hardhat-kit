@@ -10,6 +10,7 @@ task("send-coin", "Sends SimpleCoin")
 
     //create a new wallet instance
     const wallet = new ethers.Wallet(network.config.accounts[0], ethers.provider)
+    console.log(wallet.getBalance())
 
     //create a SimpleCoin contract factory
     const SimpleCoin = await ethers.getContractFactory("SimpleCoin", wallet)

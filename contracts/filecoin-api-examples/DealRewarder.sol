@@ -28,7 +28,7 @@ contract DealRewarder {
     uint64 constant METHOD_SEND = 0;
     
 
-    constructor() {
+    constructor() payable {
         owner = msg.sender;
     }
 

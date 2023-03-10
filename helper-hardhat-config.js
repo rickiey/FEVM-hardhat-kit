@@ -1,8 +1,8 @@
 const { ethers } = require("hardhat")
 
 const networkConfig = {
-    3141: {
-        name: "hyperspace",
+    314159: {
+        name: "calibration",
         tokensToBeMinted: 12000,
     },
 }
